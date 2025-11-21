@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Support Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Holiday Support Calendar</h1>
+            <p>A daily dose of calm, support, and inspiration.</p>
+        </header>
+        
+        <main id="calendar-grid">
+            <!-- Days will be injected here by script.js -->
+        </main>
+
+        <div id="modal-overlay" class="hidden">
+            <div id="modal-content">
+                <button id="close-modal">&times;</button>
+                <div id="modal-body">
+                    <h2 id="modal-day">Day 1</h2>
+                    <span id="modal-category" class="category-tag">Support</span>
+                    <h3 id="modal-title">Title Here</h3>
+                    <p id="modal-text">Content goes here...</p>
+                    <div id="modal-image-container">
+                        <!-- Image can go here if we have one -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
