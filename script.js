@@ -56,18 +56,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const img = document.createElement('img');
             img.src = data.image;
             img.alt = data.title;
-            img.style.maxWidth = '100%';
-            img.style.borderRadius = '8px';
-            img.style.marginTop = '1rem';
+            // Styles handled in CSS now
             img.onerror = () => { img.style.display = 'none'; }; // Hide if missing
             modalImageContainer.appendChild(img);
         }
 
-        // Show Modal
-        modalOverlay.classList.remove('hidden');
-        // Force reflow for transition
-        void modalOverlay.offsetWidth;
-        modalOverlay.classList.add('visible');
+        // Show Modal with slight delay for effect
+        setTimeout(() => {
+            modalOverlay.classList.remove('hidden');
+            // Force reflow for transition
+            void modalOverlay.offsetWidth;
+            modalOverlay.classList.add('visible');
+        }, 300);
     }
 
     function closeModal() {
