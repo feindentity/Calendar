@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holiday Support Calendar</title>
+    <title>Holiday Support Advent Calendar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div id="app">
+    <main id="app">
         <header>
             <h1>Holiday Support Calendar</h1>
-            <p>A daily dose of calm, support, and inspiration.</p>
+            <p>Daily tips and support for a stress-free holiday season.</p>
         </header>
-        
-        <main id="calendar-grid">
-            <!-- Days will be injected here by script.js -->
-        </main>
+        <div id="calendar-grid"></div>
 
+        <!-- Modal -->
         <div id="modal-overlay" class="hidden">
-            <div id="modal-content">
-                <button id="close-modal">&times;</button>
-                <div id="modal-body">
-                    <h2 id="modal-day">Day 1</h2>
-                    <span id="modal-category" class="category-tag">Support</span>
-                    <h3 id="modal-title">Title Here</h3>
-                    <p id="modal-text">Content goes here...</p>
-                    <div id="modal-image-container">
-                        <!-- Image can go here if we have one -->
-                    </div>
-                </div>
+            <div id="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title"
+                aria-describedby="modal-text">
+                <button id="close-modal" aria-label="Close modal">&times;</button>
+                <div id="modal-image-container"></div>
+                <div id="modal-day"></div>
+                <h2 id="modal-title"></h2>
+                <p id="modal-text"></p>
             </div>
         </div>
-    </div>
+    </main>
     <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
