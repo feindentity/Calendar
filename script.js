@@ -23,11 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.add('opened');
         }
 
-        const dayNumber = document.createElement('span');
-        dayNumber.classList.add('day-number');
-        dayNumber.textContent = data.day;
+        // Date Label (e.g. "Nov 23")
+        const dateSpan = document.createElement('span');
+        dateSpan.classList.add('card-date');
+        dateSpan.textContent = data.dateLabel;
 
-        card.appendChild(dayNumber);
+        // Category Label (e.g. "Stress")
+        const categorySpan = document.createElement('span');
+        categorySpan.classList.add('card-category');
+        categorySpan.textContent = data.category;
+
+        // Day Number (e.g. "Day 1")
+        const daySpan = document.createElement('span');
+        daySpan.classList.add('card-day');
+        daySpan.textContent = `Day ${data.day}`;
+
+        card.appendChild(dateSpan);
+        card.appendChild(categorySpan);
+        card.appendChild(daySpan);
 
         card.addEventListener('click', () => openDay(data));
 
@@ -44,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Populate Modal
-        modalDay.textContent = `Day ${data.day}`;
+        modalDay.textContent = `Day ${data.day} - ${data.dateLabel}`;
         modalCategory.textContent = data.category;
         modalTitle.textContent = data.title;
         modalText.textContent = data.content;

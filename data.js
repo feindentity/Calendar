@@ -1,219 +1,316 @@
 const calendarData = [
+    // November 2025
     {
-        day: 1,
-        category: 'Welcome',
-        title: "The Journey Begins",
-        content: "Welcome to your Holiday Support Calendar. Take a deep breath. You are not alone in this season.",
-        image: "assets/img_welcome.png"
+        day: 1, // Internal ID, keeping sequential for logic simplicity, but display will use dateLabel
+        dateLabel: "Nov 23",
+        category: 'Stress',
+        title: "The Calm Before",
+        content: "Take a deep breath. The holiday rush is starting, but today, just be. You don't need to solve everything right now.",
+        image: "assets/img_stress.png"
     },
     {
         day: 2,
+        dateLabel: "Nov 24",
+        category: 'Support',
+        title: "Managing Expectations",
+        content: "Perfect is the enemy of good. It's okay if the decorations aren't up or the menu isn't finalized. You are enough.",
+        image: "assets/img_support.png"
+    },
+    {
+        day: 3,
+        dateLabel: "Nov 25",
+        category: 'Self-Care',
+        title: "Travel Grace",
+        content: "Whether you're traveling or staying put, disruptions to routine are hard. Drink water, stretch, and be kind to yourself.",
+        image: "assets/img_selfcare.png"
+    },
+    {
+        day: 4,
+        dateLabel: "Nov 26",
+        category: 'Awkward Convos',
+        title: "Kitchen Boundaries",
+        content: "Too many cooks? It's okay to step out of the kitchen, or politely ask for space. Your peace of mind matters more than the gravy.",
+        image: "assets/img_awkward.png"
+    },
+    {
+        day: 5,
+        dateLabel: "Nov 27",
+        category: 'Grief',
+        title: "Thanksgiving Memories",
+        content: "Holidays can highlight who isn't at the table. It's okay to feel sad amidst the celebration. Honor their memory in a way that feels right to you.",
+        image: "assets/img_grief.png"
+    },
+    {
+        day: 6,
+        dateLabel: "Nov 28",
+        category: 'Stress',
+        title: "Opting Out",
+        content: "You don't have to participate in the shopping frenzy. A quiet walk or a book is a valid way to spend today.",
+        image: "assets/img_stress.png"
+    },
+    {
+        day: 7,
+        dateLabel: "Nov 29",
+        category: 'Self-Care',
+        title: "Decompression Day",
+        content: "The big meal is done. Wear comfortable clothes, eat leftovers, and rest. You've earned it.",
+        image: "assets/img_selfcare.png"
+    },
+    {
+        day: 8,
+        dateLabel: "Nov 30",
+        category: 'Inspiration',
+        title: "Advent Eve",
+        content: "As we move into December, set an intention for the month. What do you want to *feel* this season? Focus on that.",
+        image: "assets/img_inspiration.png"
+    },
+    // December 2025 (Original 1-31, shifted IDs)
+    {
+        day: 9,
+        dateLabel: "Dec 1",
+        category: 'Stress',
+        title: "Breathe In, Breathe Out",
+        content: "The holidays are a marathon, not a sprint. Take 5 minutes today to just breathe. No phone, no list, just you.",
+        image: "assets/img_stress.png"
+    },
+    {
+        day: 10,
+        dateLabel: "Dec 2",
         category: 'Support',
         title: "Setting Boundaries",
         content: "It's okay to say 'no' to events that drain you. Your presence is a present, but only if you're present enough to enjoy it.",
         image: "assets/img_support.png"
     },
     {
-        day: 3,
+        day: 11,
+        dateLabel: "Dec 3",
         category: 'Grief',
         title: "Honoring Memories",
-        content: "Missing someone special? Light a candle for them tonight. It's okay to feel sad even when everything looks festive.",
+        content: "Missing someone special? Light a candle or play their favorite song. It's okay to let grief sit beside joy.",
         image: "assets/img_grief.png"
-    },
-    {
-        day: 4,
-        category: 'Awkward Convos',
-        title: "The Pivot",
-        content: "When asked a prying question, try: 'That's a long story for another time! Tell me about your [hobby/trip/pet] instead.'",
-        image: "assets/img_awkward.png"
-    },
-    {
-        day: 5,
-        category: 'Self-Care',
-        title: "Hydration Station",
-        content: "Between the eggnog and the coffee, don't forget water. Your body (and skin) will thank you.",
-        image: "assets/img_selfcare.png"
-    },
-    {
-        day: 6,
-        category: 'Inspiration',
-        title: "Winter Wisdom",
-        content: "\"In the depth of winter, I finally learned that within me there lay an invincible summer.\" - Albert Camus",
-        image: "assets/img_inspiration.png"
-    },
-    {
-        day: 7,
-        category: 'Stress',
-        title: "Lower the Bar",
-        content: "The perfect holiday doesn't exist. Aim for 'good enough' and enjoy the messy, real moments.",
-        image: "assets/img_stress.png"
-    },
-    {
-        day: 8,
-        category: 'Support',
-        title: "Financial Peace",
-        content: "Gifts don't have to break the bank. A heartfelt letter or a homemade treat often means more than an expensive gadget.",
-        image: "assets/img_support.png"
-    },
-    {
-        day: 9,
-        category: 'Grief',
-        title: "New Traditions",
-        content: "If old traditions hurt too much, it's okay to make new ones. Order pizza, watch a movie, do what feels right for YOU.",
-        image: "assets/img_grief.png"
-    },
-    {
-        day: 10,
-        category: 'Awkward Convos',
-        title: "Politics... Nope.",
-        content: "If the conversation turns political and heated: 'I've promised myself a politics-free holiday. Let's talk about food!'",
-        image: "assets/img_awkward.png"
-    },
-    {
-        day: 11,
-        category: 'Self-Care',
-        title: "Cozy Night In",
-        content: "Cancel plans if you need to. Put on fuzzy socks, make hot cocoa, and read a book. Recharge.",
-        image: "assets/img_selfcare.png"
     },
     {
         day: 12,
-        category: 'Inspiration',
-        title: "Light in Darkness",
-        content: "\"Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.\" - Martin Luther King Jr.",
-        image: "assets/img_inspiration.png"
+        dateLabel: "Dec 4",
+        category: 'Awkward Convos',
+        title: "The Pivot",
+        content: "When a relative asks a prying question, try the pivot: 'That's a long story! But tell me, how is your [hobby/pet]?'",
+        image: "assets/img_awkward.png"
     },
     {
         day: 13,
-        category: 'Stress',
-        title: "Delegate",
-        content: "You don't have to do it all. Ask for help with cooking, cleaning, or wrapping. People often want to help but don't know how.",
-        image: "assets/img_stress.png"
+        dateLabel: "Dec 5",
+        category: 'Self-Care',
+        title: "Hydration Station",
+        content: "Between the eggnog and the lattes, don't forget water. Your body (and brain) will thank you.",
+        image: "assets/img_selfcare.png"
     },
     {
         day: 14,
-        category: 'Support',
-        title: "Check In",
-        content: "Text a friend who might also be struggling. 'Thinking of you, no need to reply.' It goes a long way.",
-        image: "assets/img_support.png"
+        dateLabel: "Dec 6",
+        category: 'Inspiration',
+        title: "Small Joys",
+        content: "Look for one small, beautiful thing today. A snowflake, a light, a smile. Collect these moments.",
+        image: "assets/img_inspiration.png"
     },
     {
         day: 15,
-        category: 'Grief',
-        title: "It Comes in Waves",
-        content: "Grief isn't linear. You might feel fine one minute and teary the next. Ride the wave, don't fight it.",
-        image: "assets/img_grief.png"
+        dateLabel: "Dec 7",
+        category: 'Stress',
+        title: "List Triage",
+        content: "Look at your to-do list. Cross off one thing that doesn't *really* need to happen. Let it go.",
+        image: "assets/img_stress.png"
     },
     {
         day: 16,
-        category: 'Awkward Convos',
-        title: "Relationship Status",
-        content: "Q: 'Why are you still single?' A: 'I'm just lucky, I guess! pass the potatoes?'",
-        image: "assets/img_awkward.png"
+        dateLabel: "Dec 8",
+        category: 'Support',
+        title: "Ask for Help",
+        content: "You don't have to do it all alone. Ask a friend to help wrap gifts or just to chat while you work.",
+        image: "assets/img_support.png"
     },
     {
         day: 17,
-        category: 'Self-Care',
-        title: "Move Your Body",
-        content: "A 10-minute walk in the crisp air can reset your nervous system. Bundle up and get outside.",
-        image: "assets/img_selfcare.png"
+        dateLabel: "Dec 9",
+        category: 'Grief',
+        title: "New Traditions",
+        content: "If old traditions hurt too much, it's okay to make a new one. Order pizza, watch a new movie. Change is okay.",
+        image: "assets/img_grief.png"
     },
     {
         day: 18,
-        category: 'Inspiration',
-        title: "Kindness",
-        content: "\"My religion is very simple. My religion is kindness.\" - Dalai Lama",
-        image: "assets/img_inspiration.png"
+        dateLabel: "Dec 10",
+        category: 'Awkward Convos',
+        title: "Politics Free Zone",
+        content: "Propose a 'Politics Free Zone' for dinner. If it comes up, gently remind everyone: 'We're here to eat, not debate!'",
+        image: "assets/img_awkward.png"
     },
     {
         day: 19,
-        category: 'Stress',
-        title: "Digital Detox",
-        content: "Step away from the curated perfection of social media. Real life is unfiltered and beautiful in its own way.",
-        image: "assets/img_stress.png"
+        dateLabel: "Dec 11",
+        category: 'Self-Care',
+        title: "Early Night",
+        content: "Go to bed 30 minutes earlier than usual. Sleep is the best defense against holiday stress.",
+        image: "assets/img_selfcare.png"
     },
     {
         day: 20,
-        category: 'Support',
-        title: "Acceptance",
-        content: "Accept family members as they are, not as you wish they were. It saves a lot of energy.",
-        image: "assets/img_support.png"
+        dateLabel: "Dec 12",
+        category: 'Inspiration',
+        title: "Give Kindness",
+        content: "The best way to cheer yourself up is to try to cheer someone else up. Send a kind text today.",
+        image: "assets/img_inspiration.png"
     },
     {
         day: 21,
-        category: 'Grief',
-        title: "The Empty Chair",
-        content: "Acknowledge the empty chair. A toast to those who aren't here can be a healing moment for everyone.",
-        image: "assets/img_grief.png"
-    },
-    {
-        day: 22,
-        category: 'Awkward Convos',
-        title: "Career Advice",
-        content: "Unsolicited career advice? 'That's an interesting perspective. I'm really happy with my path right now.'",
-        image: "assets/img_awkward.png"
-    },
-    {
-        day: 23,
-        category: 'Self-Care',
-        title: "Sleep",
-        content: "Prioritize sleep. Everything looks more manageable after a good night's rest.",
-        image: "assets/img_selfcare.png"
-    },
-    {
-        day: 24,
-        category: 'Inspiration',
-        title: "Peace",
-        content: "\"Peace begins with a smile.\" - Mother Teresa",
-        image: "assets/img_inspiration.png"
-    },
-    {
-        day: 25,
-        category: 'Support',
-        title: "You Made It",
-        content: "It's the big day. Take a deep breath. Look for one small moment of joy today, no matter how chaotic it gets.",
-        image: "assets/img_support.png"
-    },
-    {
-        day: 26,
+        dateLabel: "Dec 13",
         category: 'Stress',
-        title: "Post-Holiday Slump",
-        content: "The buildup is over. It's normal to feel a letdown. Be gentle with yourself today.",
+        title: "Budget Check",
+        content: "Financial stress is real. Remember, thoughtful notes often mean more than expensive gifts.",
         image: "assets/img_stress.png"
     },
     {
-        day: 27,
-        category: 'Self-Care',
-        title: "Leftovers & Movies",
-        content: "Today is for pajamas, leftovers, and your favorite comfort movie. No guilt allowed.",
-        image: "assets/img_selfcare.png"
+        day: 22,
+        dateLabel: "Dec 14",
+        category: 'Support',
+        title: "Connect",
+        content: "Call a friend who makes you laugh. Laughter is a serious stress-buster.",
+        image: "assets/img_support.png"
     },
     {
-        day: 28,
+        day: 23,
+        dateLabel: "Dec 15",
         category: 'Grief',
-        title: "Reflection",
-        content: "As the year ends, reflect on the strength you've shown. You've navigated difficult days and you're still here.",
+        title: "It Comes in Waves",
+        content: "Grief isn't linear. If you have a hard day after a good one, that's normal. Be gentle with yourself.",
         image: "assets/img_grief.png"
     },
     {
-        day: 29,
+        day: 24,
+        dateLabel: "Dec 16",
         category: 'Awkward Convos',
-        title: "Resolutions",
-        content: "Don't feel pressured to share resolutions. 'I'm still processing this year!' is a valid answer.",
+        title: "The 'Why' Question",
+        content: "'Why are you still single/childless/etc?' Answer: 'I'm focusing on my happiness right now. Thanks for asking!'",
         image: "assets/img_awkward.png"
     },
     {
-        day: 30,
+        day: 25,
+        dateLabel: "Dec 17",
+        category: 'Self-Care',
+        title: "Sensory Break",
+        content: "Too much noise? Lights? Smells? Step outside or into a dark room for 5 minutes. Reset your senses.",
+        image: "assets/img_selfcare.png"
+    },
+    {
+        day: 26,
+        dateLabel: "Dec 18",
         category: 'Inspiration',
-        title: "New Beginnings",
-        content: "\"What the caterpillar calls the end of the world, the master calls a butterfly.\" - Richard Bach",
+        title: "You Are Doing Great",
+        content: "Seriously. Look at how much you've handled. Give yourself some credit.",
         image: "assets/img_inspiration.png"
     },
     {
-        day: 31,
+        day: 27,
+        dateLabel: "Dec 19",
+        category: 'Stress',
+        title: "Imperfection is Beauty",
+        content: "The crooked tree, the burnt cookies—these are the stories you'll laugh about later. Embrace the mess.",
+        image: "assets/img_stress.png"
+    },
+    {
+        day: 28,
+        dateLabel: "Dec 20",
         category: 'Support',
-        title: "Happy New Year",
-        content: "You survived the holidays. You are resilient. Here's to a new year of being kind to yourself.",
+        title: "Community",
+        content: "Look for free community events. A choir, a light display. Being around others without obligation can be uplifting.",
+        image: "assets/img_support.png"
+    },
+    {
+        day: 29,
+        dateLabel: "Dec 21",
+        category: 'Grief',
+        title: "Winter Solstice",
+        content: "On the longest night, remember that the light always returns. Your light will return too.",
+        image: "assets/img_grief.png"
+    },
+    {
+        day: 30,
+        dateLabel: "Dec 22",
+        category: 'Awkward Convos',
+        title: "Exit Strategy",
+        content: "Drive yourself if you can. Knowing you can leave whenever you want reduces social anxiety significantly.",
+        image: "assets/img_awkward.png"
+    },
+    {
+        day: 31,
+        dateLabel: "Dec 23",
+        category: 'Self-Care',
+        title: "Nourish",
+        content: "Eat a vegetable. Drink a glass of water. Balance the treats with fuel.",
+        image: "assets/img_selfcare.png"
+    },
+    {
+        day: 32,
+        dateLabel: "Dec 24",
+        category: 'Inspiration',
+        title: "Anticipation",
+        content: "The magic is often in the waiting. Enjoy the quiet moments of this evening.",
+        image: "assets/img_inspiration.png"
+    },
+    {
+        day: 33,
+        dateLabel: "Dec 25",
+        category: 'Support',
+        title: "You Made It",
+        content: "Merry Christmas! Whether it's chaotic or quiet, you are here. Take a moment to appreciate yourself.",
+        image: "assets/img_support.png"
+    },
+    {
+        day: 34,
+        dateLabel: "Dec 26",
+        category: 'Stress',
+        title: "Boxing Day Calm",
+        content: "The pressure is off. Stay in pajamas. Read a book. Eat leftovers. Do absolutely nothing.",
+        image: "assets/img_stress.png"
+    },
+    {
+        day: 35,
+        dateLabel: "Dec 27",
+        category: 'Self-Care',
+        title: "Movement",
+        content: "Go for a walk. Shake off the cabin fever. Fresh air is a miracle worker.",
+        image: "assets/img_selfcare.png"
+    },
+    {
+        day: 36,
+        dateLabel: "Dec 28",
+        category: 'Grief',
+        title: "Post-Holiday Blues",
+        content: "It's normal to feel a slump after the big day. Be kind to yourself. Plan something small to look forward to.",
+        image: "assets/img_grief.png"
+    },
+    {
+        day: 37,
+        dateLabel: "Dec 29",
+        category: 'Awkward Convos',
+        title: "New Year Pressure",
+        content: "Don't let anyone pressure you about resolutions. You don't have to reinvent yourself just because the year changes.",
+        image: "assets/img_awkward.png"
+    },
+    {
+        day: 38,
+        dateLabel: "Dec 30",
+        category: 'Inspiration',
+        title: "Reflection",
+        content: "Look back on the year. Not at what you didn't do, but at how you survived and grew. You're stronger than you think.",
+        image: "assets/img_inspiration.png"
+    },
+    {
+        day: 39,
+        dateLabel: "Dec 31",
+        category: 'Support',
+        title: "New Beginnings",
+        content: "Happy New Year's Eve! Here's to a fresh start, however small. You've got this.",
         image: "assets/img_support.png"
     }
 ];
