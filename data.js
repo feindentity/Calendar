@@ -60,7 +60,7 @@ const calendarData = [
         day: 8,
         dateLabel: "Nov 30",
         category: 'Inspiration',
-        title: "Advent Eve",
+        title: "December Eve",
         content: "As we move into December, set an intention for the month. What do you want to *feel* this season? Focus on that.",
         image: "assets/img_inspiration.png"
     },
@@ -102,7 +102,7 @@ const calendarData = [
         dateLabel: "Dec 5",
         category: 'Self-Care',
         title: "Hydration Station",
-        content: "Between the eggnog and the lattes, don't forget water. Your body (and brain) will thank you.",
+        content: "Between the hot cocoa and the lattes, don't forget water. Your body (and brain) will thank you.",
         image: "assets/img_selfcare.png"
     },
     {
@@ -173,8 +173,8 @@ const calendarData = [
         day: 22,
         dateLabel: "Dec 14",
         category: 'Support',
-        title: "Connect",
-        content: "Call a friend who makes you laugh. Laughter is a serious stress-buster.",
+        title: "Light in Darkness",
+        content: "Happy Hanukkah! Tonight the first candle is lit. Remember that even a little light pushes back the darkness.",
         image: "assets/img_support.png"
     },
     {
@@ -214,7 +214,7 @@ const calendarData = [
         dateLabel: "Dec 19",
         category: 'Stress',
         title: "Imperfection is Beauty",
-        content: "The crooked tree, the burnt cookies—these are the stories you'll laugh about later. Embrace the mess.",
+        content: "The crooked decorations, the burnt cookies—these are the stories you'll laugh about later. Embrace the mess.",
         image: "assets/img_stress.png"
     },
     {
@@ -236,10 +236,10 @@ const calendarData = [
     {
         day: 30,
         dateLabel: "Dec 22",
-        category: 'Awkward Convos',
-        title: "Exit Strategy",
-        content: "Drive yourself if you can. Knowing you can leave whenever you want reduces social anxiety significantly.",
-        image: "assets/img_awkward.png"
+        category: 'Inspiration',
+        title: "Full Light",
+        content: "On this last night of Hanukkah, with the menorah fully lit, reflect on the warmth and resilience you carry within you.",
+        image: "assets/img_inspiration.png"
     },
     {
         day: 31,
@@ -261,16 +261,16 @@ const calendarData = [
         day: 33,
         dateLabel: "Dec 25",
         category: 'Support',
-        title: "You Made It",
-        content: "Merry Christmas! Whether it's chaotic or quiet, you are here. Take a moment to appreciate yourself.",
+        title: "Season's Greetings",
+        content: "Merry Christmas and Happy Holidays! Whether it's chaotic or quiet, you are here. Take a moment to appreciate yourself.",
         image: "assets/img_support.png"
     },
     {
         day: 34,
         dateLabel: "Dec 26",
         category: 'Stress',
-        title: "Boxing Day Calm",
-        content: "The pressure is off. Stay in pajamas. Read a book. Eat leftovers. Do absolutely nothing.",
+        title: "Boxing Day & Kwanzaa",
+        content: "The pressure is off. Happy Kwanzaa to those celebrating! Today is about Umoja (Unity). Rest and connect.",
         image: "assets/img_stress.png"
     },
     {
