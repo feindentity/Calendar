@@ -1,0 +1,13 @@
+{
+  "name": "holiday-support-calendar",
+  "version": "1.0.0",
+  "description": "A daily support calendar for the holiday season.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
