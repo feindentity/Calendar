@@ -196,14 +196,28 @@ if (typeof process === 'undefined') { // Ensures this only runs in the browser
     document.addEventListener('DOMContentLoaded', init);
 }
  
-// Export functions for testing
-module.exports = {
-    init,
-    renderGrid,
-    openDay,
-    showModal,
-    closeModal,
-    getOpenedDays,
-    saveOpenedDay,
-    trapFocus
-};
+ // Export functions for testing
+ 
+if (typeof module !== 'undefined' && module.exports) {
+ 
+    module.exports = {
+ 
+        init,
+ 
+        renderGrid,
+ 
+        openDay,
+ 
+        showModal,
+ 
+        closeModal,
+ 
+        getOpenedDays,
+ 
+        saveOpenedDay,
+ 
+        trapFocus
+ 
+    };
+ 
+}
