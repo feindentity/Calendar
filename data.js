@@ -173,7 +173,7 @@ const calendarData = [
         day: 22,
         dateLabel: "Dec 14",
         category: 'Support',
-        title: "Light in Darkness",
+        title: "Hanukkah Begins",
         content: "Happy Hanukkah! Tonight the first candle is lit. Remember that even a little light pushes back the darkness.",
         image: "assets/img_support.png"
     },
@@ -229,15 +229,15 @@ const calendarData = [
         day: 29,
         dateLabel: "Dec 21",
         category: 'Grief',
-        title: "Winter Solstice",
-        content: "On the longest night, remember that the light always returns. Your light will return too.",
+        title: "Winter Solstice & Yule",
+        content: "On the longest night, remember that the light always returns. Your light will return too. Happy Yule to those celebrating the return of the sun.",
         image: "assets/img_grief.png"
     },
     {
         day: 30,
         dateLabel: "Dec 22",
         category: 'Inspiration',
-        title: "Full Light",
+        title: "Hanukkah Ends",
         content: "On this last night of Hanukkah, with the menorah fully lit, reflect on the warmth and resilience you carry within you.",
         image: "assets/img_inspiration.png"
     },
@@ -277,8 +277,8 @@ const calendarData = [
         day: 35,
         dateLabel: "Dec 27",
         category: 'Self-Care',
-        title: "Movement",
-        content: "Go for a walk. Shake off the cabin fever. Fresh air is a miracle worker.",
+        title: "Movement & Self-Determination",
+        content: "Go for a walk. Shake off the cabin fever. In the spirit of Kwanzaa's second principle, Kujichagulia (Self-Determination), define what well-being means for *you*.",
         image: "assets/img_selfcare.png"
     },
     {
@@ -301,8 +301,8 @@ const calendarData = [
         day: 38,
         dateLabel: "Dec 30",
         category: 'Inspiration',
-        title: "Reflection",
-        content: "Look back on the year. Not at what you didn't do, but at how you survived and grew. You're stronger than you think.",
+        title: "Reflection & Purpose",
+        content: "Look back on the year. Reflect on your purpose (Nia), a core principle of Kwanzaa. How do you want to move through the coming year?",
         image: "assets/img_inspiration.png"
     },
     {
