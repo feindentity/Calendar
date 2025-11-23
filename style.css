@@ -1,6 +1,7 @@
 :root {
     --primary-color: #2c3e50;
-    --accent-color: #e74c3c;
+    --accent-color: #3498db;
+    /* Winter Blue */
     --gold: #f1c40f;
     --text-light: #ecf0f1;
     --card-bg: rgba(255, 255, 255, 0.15);
@@ -224,7 +225,8 @@ header p {
 
 /* Day Card - Wrapped Present Design */
 .day-card {
-    background-color: #c0392b;
+    background-color: #2980b9;
+    /* Deep Blue */
     background-image:
         linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
     background-size: 20px 20px;
